@@ -128,7 +128,10 @@ header{
 	color: rgba(255, 255, 255, 0.4);
 	transition: 0.4s ease all;
 }
-
+.showslider{
+    position: relative;
+    color: #deafaf;
+}
 
 /* ///////////////////////////////////////////////////////////////////// 
 //  03 - Navigation 
@@ -576,6 +579,9 @@ footer {
     .split-slider-wrapper .navigation{
         right: 396px !important;
     }
+    .split-slider-wrapper{
+        margin-bottom: 328px;
+    }
 }
 
 @media all and (min-width: 1400px) {
@@ -724,7 +730,7 @@ footer {
   background: #fff;
   box-shadow: 0 15px 35px 19px rgba(50, 50, 93, 0.18), 0 5px 15px rgba(0, 0, 0, 0.32);
   align-self: stretch;
-  height: 550px;
+  margin-bottom: 142px;
 }
 
 .split-slider-wrapper .split-slider-image {
@@ -740,8 +746,8 @@ footer {
   right: 0;
   bottom: 120%;
   transition: all 600ms cubic-bezier(1, 0, 0, 1);
- width: 112%;
-height: 100%;
+ width: 100%;
+
 }
 
 .split-slider-wrapper .split-slider-content {

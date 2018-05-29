@@ -1,30 +1,29 @@
 $(".js-navigate").on("click", function() {
-   var id= $(this).attr('customid');
-   console.log(id);
+
   $(".js-navigate").removeClass("disabled");
-  var current = $("."+id+"slider.active");
-  var findNext = $(current).next("."+id+"slider");
-  var findPrev = $(current).prev("."+id+"slider");
+  var current = $(".split-slider.active");
+  var findNext = $(current).next(".split-slider");
+  var findPrev = $(current).prev(".split-slider");
   var button = $(this);
   $(current).removeClass("active");
   setTimeout(function() {
     if ($(button).hasClass("js-right")) {
       $(findNext).addClass("active");
-      checkForDisable(id);
+      checkForDisable();
     } else if ($(button).hasClass("js-left")) {
       $(findPrev).addClass("active");
-      checkForDisable(id);
+      checkForDisable();
     }
   }, 300);
 });
 
 
-function checkForDisable(id) {
-  var current = $("."+id+"slider.active");
+function checkForDisable() {
+  var current = $(".split-slider.active");
     
-  if ($(current).is("."+id+"slider:last")) {
+  if ($(current).is(".split-slider:last")) {
     $(".js-right").addClass("disabled");
-  } else if ($(current).is("."+id+"slider:first")) {
+  } else if ($(current).is(".split-slider:first")) {
     $(".js-left").addClass("disabled");
   }
 }

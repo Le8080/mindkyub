@@ -184,7 +184,7 @@ google.maps.event.addDomListener(window, 'load', initialize);
 
 $(".showslider").click(function(){
 $('html, body').animate({
-        scrollTop: $(".sliderloc").offset().top - 150
+        scrollTop: $(".sliderloc").offset().top - 20
     }, 1000);
 });
 
