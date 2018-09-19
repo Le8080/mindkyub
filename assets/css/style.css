@@ -223,8 +223,27 @@ header{
 }
 .service-area {
     margin: 80px 0px 40px 0px;
+    padding-bottom: 67px;
 }
+.mworkimage{
+    box-shadow: inset -3px 3px 400px 400px rgb(50, 50, 50);
 
+
+}
+.mimage{
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(50%);
+    max-width: 100%;    
+    min-width: 30%;
+}
+.mimage.pleft{
+    float: left;
+    border-right: 22px solid #8c8c8c;
+}
+.mimage.pright{
+    float: right;
+    border-left: 22px solid #8c8c8c;
+}
 .service-wrap {
     width: 100%;
     height: 100%;
@@ -259,8 +278,12 @@ header{
 
 #portfolio {
     padding: 80px 0px 0px 0px;
+    background-color: black;
+    
 }
-
+#portfolio .block_title{
+    color: white;
+}
 .port {
 	list-style: none;
 	text-align: left;
@@ -616,7 +639,9 @@ footer {
 }
 
 @media all and (max-width: 991px) and (min-width: 768px) {
-
+    .mimage{
+        border : none !important;
+    }
 	.services {
 		max-width: 293px;
 		height: 293px;
@@ -630,6 +655,12 @@ footer {
 	.pe-dj {
 		font-size: 6em;
 	}
+    .mimage.pright{
+        border-left: 33px solid #8c8c8c;
+    }
+    .mimage.pleft{
+        border-right: 33px solid #8c8c8c;
+    }
 
 }
 
@@ -644,6 +675,9 @@ footer {
 }
 
 @media all and (max-width: 768px) {
+    .mimage{
+        border: none !important;
+    }
 	.services {
 		max-width: 293px;
 		height: 293px;
@@ -681,7 +715,9 @@ footer {
 	}
 }
 @media all and (max-width: 380px) {
-
+    .mimage{
+        border: none !important;
+    }
 
 	.logo-text {
 	    font-size: 2em;
